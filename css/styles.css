@@ -613,7 +613,6 @@ footer {
   flex-direction: column;
   align-items: baseline;
   margin-top: 12px;
-  margin-right: 93px;
 }
 
 .footer-social-link {
@@ -653,13 +652,15 @@ footer {
 
 .sender-form {
   margin-top: 12px;
+  margin-left: auto;
 }
 .footer-form-wrapper {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
 }
 .sender-btn {
+  width: 200px;
+  height: 50px;
   padding: 10px 28px;
 }
 
@@ -681,14 +682,14 @@ footer {
 
 .sender-field-input:focus {
   border-color: var(--third-color);
+  outline: none;
 }
 
 .sender-field-input {
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 16px;
   margin-right: 12px;
   width: 358px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -798,9 +799,11 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   left: 14px;
+  transition: fill 250ms var(--transition-function);
 }
 
 .field-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -814,10 +817,12 @@ footer {
   padding-bottom: 11px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms var(--transition-function);
 }
 
 .modal-field-input:focus {
   border-color: var(--third-color);
+  outline: none;
 }
 
 .modal-field-input:focus + .modal-icon {
@@ -856,6 +861,7 @@ textarea::placeholder {
   height: 15px;
   border: 2px solid var(--main-color);
   border-radius: 2px;
+  transition: background-color 250ms var(--transition-function);
 }
 
 .icon-agree {
